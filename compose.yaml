@@ -1,0 +1,11 @@
+services:
+  ccfile:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: final
+    ports:
+      - 8080:8080
+    volumes:
+        - ./mountpoint:/app/mountpoint
+
